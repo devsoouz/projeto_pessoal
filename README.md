@@ -6,12 +6,6 @@
 
 ---
 
-## 🖼️ Preview
-
-![Screenshot do Portfólio](./assets/images/site-apresentação.png)
-*(Se a imagem não carregar, certifique-se de que o arquivo existe na pasta assets/images)*
-
----
 
 ## 🛠️ Tecnologias Utilizadas
 
