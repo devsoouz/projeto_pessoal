@@ -1,175 +1,183 @@
-/* Importação de Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pacifico&display=swap');
+/* Importação de Fontes Modernas */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;500;700&family=Inter:wght@300;400;600&family=Pacifico&display=swap');
 
-/* Variáveis */
-:root{
-    --bg-dark: #1D1616;
-    --bg-light: #FEF4E1;
-    --bg-accent: #E4D0AC;
-
-    /* Cores de Destaque e Acentos (Accents) */
-    --accent-red-primary: #A31D1D;    /* Vermelho principal da nova paleta */
-    --accent-red-secondary: #D84040; /* Vermelho vibrante da paleta antiga */
-    --accent-red-dark: #8E1616;
-    --accent-red-deep: #6D2323;
-
-    /* Cores de Texto (Text) */
-    --text-on-light-bg: #6D2323; /* Texto escuro para usar em fundos claros */
-    --text-on-dark-bg: #FEF9E1;  /* Texto claro para usar em fundos escuros */
-    --text-highlight: #A31D1D;   /* Cor de destaque para títulos, links, etc. */
-
-}
+:root {
+    /* Paleta de Cores Refinada */
+    --bg-body: #F9FAFB;       /* Cinza muito claro (quase branco) para o fundo geral */
+    --bg-card: #FFFFFF;       /* Branco puro para os cartões */
+    --primary: #A31D1D;       /* Seu vermelho original (mantido como destaque) */
+    --text-main: #1F2937;     /* Cinza chumbo (melhor leitura que preto puro) */
+    --text-muted: #6B7280;    /* Cinza médio para textos secundários */
     
-
-html{
-    background-color:var(--bg-light) 
+    /* Sombras Suaves (Segredo do design moderno) */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-/* Contâiners */
-.top-container{
-    padding-top: 100px;
-    background-color: var(--bg-light);
+html, body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif; /* Fonte padrão muito usada em Tech */
+    overflow-x: hidden;
 }
 
-.mid-container{
-    margin: 100px auto; 
-    padding: 0 15px;
-}
-
-/* Profile Section */
-.profile > img {
-    width: 150px;
-    height: 200px;
-    object-fit: cover; 
-    border-radius: 50%; 
-    display: block; 
-    margin: auto; 
-    padding-bottom: 10px;
-}
-
-.mountain{
-    object-fit:cover;
-    object-position:center bottom ;
-    width: 100%;
-    height: 400px;
-    display: block;
-    margin: 40px auto 0 auto;
-}
-
-
-/* Tipografia */
-h1{
-    color: var(--text-highlight);
-    font-family: 'Pacifico', sans-serif;
-    font-size: 5rem;
-}
-h2{
+/* --- HERO SECTION (TOPO) --- */
+.top-container {
+    background: linear-gradient(135deg, #FEF4E1 0%, #fff 100%); /* Degradê suave */
+    padding: 120px 0 60px 0;
     text-align: center;
-    color: var( --accent-red-secondary);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+h1 {
     font-family: 'Funnel Display', sans-serif;
-    font-size: 2.5rem;
-    margin: 1.5rem 0rem;
-    padding-bottom:0.5rem;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
 }
 
-h3{
-   font-family: 'Funnel Display', sans-serif; 
-   width: 60%;
-   margin: auto;
-   color: var(--accent-red-secondary);
-   text-align: center; 
+/* A "Assinatura" usando a fonte Pacifico */
+.name-highlight {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-weight: 400;
 }
 
-
-p{
-    color: var(--accent-red-deep); 
-    font-size: 1rem;
-    font-weight:lighter;
-    width: 60%;
-    margin: auto;
-    line-height: 1.5; 
+h2 {
+    font-family: 'Funnel Display', sans-serif;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-hr{
-    margin: 100px auto;
+.mountain {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 40px auto -60px auto; /* Efeito de sobreposição negativo */
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%); /* Desvanece a imagem no final */
+}
+
+/* --- PERFIL --- */
+.mid-container {
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.profile img {
+    border: 4px solid white;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05); /* Zoom suave na foto */
+}
+
+.lead {
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+hr {
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary);
     border: none;
-    border-top: 5px dotted var(--accent-red-dark); 
-    width: 10%;
-    opacity: 0.75;
+    opacity: 1;
+    border-radius: 2px;
+    margin: 3rem auto;
 }
 
-u{
-    text-decoration-style:wavy;
-    color: var(--accent-red-deep);
-}
-
-/* SKILLS SECTION (Skill List) */
-
-.skill-list {
-    display: flex;
-    flex-direction: column; 
-    gap: 5rem; 
-    width: 70%; 
-    margin: 100px auto 0 auto;
-}
-
+/* --- SKILLS --- */
 .skill-item {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: 1px solid #f3f4f6;
+    margin-bottom: 2rem;
+}
+
+.skill-item:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px); /* O card sobe um pouco */
 }
 
 .skill-icon img {
-    width: 150px; 
-    height: 150px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 12px;
+}
+
+.skill-description h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-.skill-description {
-    max-width: 400px; 
+/* --- PROJETOS (CARDS) --- */
+.projetos h2, .skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--text-main);
 }
 
-.skill-description p {
-    width: 100%; 
+.card {
+    border: none;
+    border-radius: 16px;
+    background: var(--bg-card);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
+}
+ 
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
 
+.card-title {
+    color: var(--text-main);
+    font-weight: 700;
+}
 
-@media (min-width: 992px) { 
-    
-    .skill-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+.card-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
 
-    .skill-item {        
-        display: flex;
-        flex-direction: row; 
-        align-items: flex-start; 
-        text-align: left;
-    }
-    
-    .skill-list .skill-item:nth-child(even) {
-        flex-direction: row-reverse;
-        text-align: right;
-    }
+/* Botão Personalizado */
+.btn-custom {
+    background-color: var(--text-main);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
 
-    .skill-list .skill-item:nth-child(even) .skill-icon {
-        margin-left: 2rem;
-        margin-right: 0;
-    }
-    
-    .skill-icon {
-        margin-right: 2rem;
-    }
-    
-    .skill-description p, .skill-description h3 {
-        width: 100%; 
-        margin: 0; 
-    }
+.btn-custom:hover {
+    background-color: var(--primary);
+    color: white;
+}
 
-    
+/* Footer */
+footer {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
 }
