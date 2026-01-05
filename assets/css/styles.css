@@ -1,15 +1,12 @@
-/* Importação de Fontes Modernas */
+
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;500;700&family=Inter:wght@300;400;600&family=Pacifico&display=swap');
 
 :root {
-    /* Paleta de Cores Refinada */
-    --bg-body: #F9FAFB;       /* Cinza muito claro (quase branco) para o fundo geral */
-    --bg-card: #FFFFFF;       /* Branco puro para os cartões */
-    --primary: #A31D1D;       /* Seu vermelho original (mantido como destaque) */
-    --text-main: #1F2937;     /* Cinza chumbo (melhor leitura que preto puro) */
-    --text-muted: #6B7280;    /* Cinza médio para textos secundários */
-    
-    /* Sombras Suaves (Segredo do design moderno) */
+    --bg-body: #F9FAFB;      
+    --bg-card: #FFFFFF;       
+    --primary: #A31D1D;       
+    --text-main: #1F2937;     
+    --text-muted: #6B7280;    
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -18,13 +15,12 @@
 html, body {
     background-color: var(--bg-body);
     color: var(--text-main);
-    font-family: 'Inter', sans-serif; /* Fonte padrão muito usada em Tech */
+    font-family: 'Inter', sans-serif; 
     overflow-x: hidden;
 }
 
-/* --- HERO SECTION (TOPO) --- */
 .top-container {
-    background: linear-gradient(135deg, #FEF4E1 0%, #fff 100%); /* Degradê suave */
+    background: linear-gradient(135deg, #FEF4E1 0%, #fff 100%); 
     padding: 120px 0 60px 0;
     text-align: center;
     border-bottom: 1px solid #e5e7eb;
@@ -39,7 +35,6 @@ h1 {
     line-height: 1.1;
 }
 
-/* A "Assinatura" usando a fonte Pacifico */
 .name-highlight {
     font-family: 'Pacifico', cursive;
     color: var(--primary);
@@ -58,8 +53,8 @@ h2 {
     max-width: 800px;
     height: auto;
     display: block;
-    margin: 40px auto -60px auto; /* Efeito de sobreposição negativo */
-    mask-image: linear-gradient(to bottom, black 80%, transparent 100%); /* Desvanece a imagem no final */
+    margin: 40px auto -60px auto; 
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%); 
 }
 
 /* --- PERFIL --- */
@@ -75,7 +70,7 @@ h2 {
 }
 
 .profile img:hover {
-    transform: scale(1.05); /* Zoom suave na foto */
+    transform: scale(1.05); 
 }
 
 .lead {
@@ -107,7 +102,7 @@ hr {
 
 .skill-item:hover {
     box-shadow: var(--shadow-lg);
-    transform: translateY(-5px); /* O card sobe um pouco */
+    transform: translateY(-5px); 
 }
 
 .skill-icon img {
