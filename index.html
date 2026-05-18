@@ -3,140 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Matheus Souza</title>
+    <meta name="description" content="Portfólio de Matheus Souza — Dev Front-End em formação. HTML, CSS, JavaScript e TypeScript.">
+    <meta name="author" content="Matheus Souza">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Open Graph (para compartilhamento) -->
+    <meta property="og:title" content="Matheus Souza — Dev Front-End">
+    <meta property="og:description" content="Portfólio de Matheus Souza — Estudante de ADS focado em código limpo e interfaces amigáveis.">
+    <meta property="og:type" content="website">
+
+    <title>Matheus Souza — Dev Front-End</title>
+
+    <!-- Favicon emoji simples -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰️</text></svg>">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
 
-<header class="top-container">
-    <div class="container text-center position-relative">
-        <h1>Eu sou <span class="name-highlight">Matheus</span></h1>
-        <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
+<!-- NAVBAR -->
+<nav class="navbar-custom" id="navbar">
+    <div style="padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; margin: 0 auto; max-width: 1100px;">
+        <a href="#" class="nav-brand">Matheus<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+</nav>
 
-        <div class="mt-4">
-            <a href="https://www.linkedin.com/" target="_blank" class="btn btn-custom btn-lg shadow-sm">
-                <i class="bi bi-linkedin"></i> Conecte-se comigo
+<!-- HERO -->
+<header class="top-container">
+    <div class="hero-content text-center">
+        <div class="hero-tag">
+            <span class="dot"></span>
+            Disponível para oportunidades
+        </div>
+
+        <h1>
+            Olá, eu sou <br>
+            <span class="name-highlight">Matheus Souza</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Dev Front-End em formação e estudante de Análise e Desenvolvimento de Sistemas.
+            Foco em construir interfaces limpas com a mentalidade da logística.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projetos" class="btn-custom">
+                Ver projetos <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-silva-souza-devz" target="_blank" rel="noopener" class="btn-outline">
+                <i class="bi bi-linkedin"></i> LinkedIn
             </a>
         </div>
     </div>
 
-    <img class="mountain" src="./assets/images/montanha.jpg" alt="Ilustração artística de uma montanha">
+    <div class="mountain-wrap">
+        <img class="mountain" src="./assets/images/montanha.jpg" alt="Ilustração de uma montanha azul">
+    </div>
 </header>
 
-<main class="mid-container container">
+<main class="mid-container">
 
-    <section class="profile text-center">
-        <img src="./assets/images/math_profissional.jpg" alt="Foto de Matheus Souza" class="rounded-circle mb-3">
-
-        <p class="lead">
-            Olá! Trazendo a organização e a eficiência da <strong>Logística</strong> para a estrutura do código no
-            <strong>Desenvolvimento Web</strong>.
-            Tenho foco em <strong>código limpo</strong>, interfaces amigáveis e resolução de problemas reais.
-        </p>
-
-        <hr>
-    </section>
-
-    <section class="skills mt-5">
-        <h2>O que eu faço</h2>
-
-        <div class="row g-4 justify-content-center">
-
-            <div class="col-md-6">
-                <div class="skill-item d-flex align-items-center gap-4">
-                    <i class="bi bi-laptop skill-icon"></i>
-                    <div>
-                        <h3>Front-End</h3>
-                        <p class="text-muted m-0">
-                            Criação de layouts responsivos com <strong>HTML5, CSS3 e Bootstrap</strong>.
-                            Estudando <strong>JavaScript</strong> e React.
-                        </p>
-                    </div>
-                </div>
+    <!-- SOBRE -->
+    <section class="profile-section" id="sobre">
+        <div class="profile">
+            <div class="profile-img-wrap">
+                <img src="./assets/images/math_profissional.jpg" alt="Foto de Matheus Souza">
             </div>
-
-            <div class="col-md-6">
-                <div class="skill-item d-flex align-items-center gap-4">
-                    <i class="bi bi-database-gear skill-icon"></i>
-                    <div>
-                        <h3>Dados & Back-End</h3>
-                        <p class="text-muted m-0">
-                            Automação e análise com <strong>Python</strong> e bancos de dados <strong>SQL</strong>.
-                        </p>
-                    </div>
-                </div>
+            <div class="profile-content">
+                <div class="section-tag">Sobre mim</div>
+                <h2 class="section-title">Da logística para o código</h2>
+                <p>
+                    Trago a <strong>organização e a eficiência</strong> da logística para a
+                    estrutura do código no desenvolvimento web. Estudante de
+                    <strong>Análise e Desenvolvimento de Sistemas</strong> com foco em
+                    <strong>código limpo</strong>, interfaces amigáveis e na resolução de
+                    problemas reais — sempre buscando o equilíbrio entre forma e função.
+                </p>
             </div>
-
         </div>
     </section>
 
-    <section class="projetos mt-5 pt-4">
-        <h2>Meus Projetos</h2>
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-tag">O que eu faço</div>
+        <h2 class="section-title">Tecnologias & habilidades</h2>
+        <p class="section-subtitle">
+            Áreas em que tenho me dedicado para construir produtos completos.
+        </p>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./assets/images/data-analysis-example.png" class="card-img-top" alt="Imagem de um código em python">
-                    <div class="card-body">
-                        <h5 class="card-title">Análise de Vendas Python</h5>
-                        <p class="card-text">
-                            Processamento de dados, armazenamento em SQLite e geração de gráficos.
-                        </p>
-                        <span class="badge text-bg-secondary">Python</span>
-                        <span class="badge text-bg-secondary">SQL</span>
-                    </div>
-                    <div class="card-footer bg-white border-0">
-                        <a href="https://github.com/" target="_blank" class="btn btn-outline-dark w-100">
-                            Ver no GitHub <i class="bi bi-github"></i>
-                        </a>
-                    </div>
-                </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-icon"><i class="bi bi-laptop"></i></div>
+                <h3>Front-End</h3>
+                <p>
+                    Criação de layouts responsivos com <strong>HTML5, CSS3 e Bootstrap</strong>,
+                    sempre pensando mobile-first.
+                </p>
             </div>
 
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./assets/images/responsive-website-example.png" class="card-img-top" alt="Portfólio">
-                    <div class="card-body">
-                        <h5 class="card-title">Portfólio Pessoal</h5>
-                        <p class="card-text">
-                            Interface focada em UI/UX com Bootstrap 5.
-                        </p>
-                        <span class="badge text-bg-secondary">HTML</span>
-                        <span class="badge text-bg-secondary">CSS</span>
-                        <span class="badge text-bg-secondary">Bootstrap</span>
-                    </div>
-                    <div class="card-footer bg-white border-0">
-                        <a href="#" class="btn btn-outline-dark w-100">
-                            Ver Código <i class="bi bi-code-slash"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="skill-item">
+                <div class="skill-icon"><i class="bi bi-braces"></i></div>
+                <h3>JavaScript & TypeScript</h3>
+                <p>
+                    Estudando <strong>JavaScript</strong> e <strong>TypeScript</strong> para
+                    construir interfaces dinâmicas e tipadas.
+                </p>
             </div>
 
+            <div class="skill-item">
+                <div class="skill-icon"><i class="bi bi-git"></i></div>
+                <h3>Versionamento</h3>
+                <p>
+                    Controle de versão com <strong>Git e GitHub</strong>, fluxo de branches
+                    e colaboração em projetos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <div class="section-tag">Projetos</div>
+        <h2 class="section-title">Trabalhos selecionados</h2>
+        <p class="section-subtitle">
+            Projetos pessoais que construí para aplicar o que tenho estudado.
+        </p>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-img-wrap">
+                    <img src="assets/images/wikipédia-clone.png" alt="Wikipedia Clone">
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Wikipedia Clone</h3>
+                    <p class="project-text">
+                        Recriação da interface da Wikipédia com HTML semântico e CSS,
+                        focando em estrutura e fidelidade visual.
+                    </p>
+                    <div class="project-badges">
+                        <span class="badge-tech">HTML5</span>
+                        <span class="badge-tech">CSS3</span>
+                    </div>
+                    <a href="https://github.com/devsoouz/wikipedia-clone-html" target="_blank" rel="noopener" class="project-link">
+                        Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img-wrap">
+                    <img src="assets/images/projeto-pessoal.png" alt="Portfólio Pessoal">
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Portfólio Pessoal</h3>
+                    <p class="project-text">
+                        Site de apresentação focado em UI/UX, com layout responsivo,
+                        tipografia cuidadosa e atenção a detalhes de design.
+                    </p>
+                    <div class="project-badges">
+                        <span class="badge-tech">HTML5</span>
+                        <span class="badge-tech">CSS3</span>
+                        <span class="badge-tech">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/devsoouz/projeto_pessoal" target="_blank" rel="noopener" class="project-link">
+                        Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="contact-section">
+            <div class="section-tag">Vamos conversar</div>
+            <h2 class="section-title">Aberto a novas oportunidades</h2>
+            <p>
+                Está procurando alguém com vontade de aprender e entregar bons resultados?
+                Vamos trocar uma ideia — adoro um bom desafio.
+            </p>
+            <div class="hero-actions">
+                <a href="https://www.linkedin.com/in/matheus-silva-souza-devz" target="_blank" rel="noopener" class="btn-custom">
+                    <i class="bi bi-linkedin"></i> Conecte-se comigo
+                </a>
+                <a href="https://github.com/devsoouz" target="_blank" rel="noopener" class="btn-outline">
+                    <i class="bi bi-github"></i> Ver GitHub
+                </a>
+            </div>
         </div>
     </section>
 
 </main>
 
-<footer class="container py-4 border-top">
-    <div class="d-flex justify-content-between align-items-center">
-        <span class="text-muted">© 2025 Matheus Souza</span>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <span class="copyright">© 2025 Matheus Souza · Feito com <i class="bi bi-heart-fill" style="color:#5B7FB8"></i> e código</span>
 
-        <div class="d-flex gap-3">
-            <a href="https://www.linkedin.com/" target="_blank" class="text-muted">
-                <i class="bi bi-linkedin fs-4"></i>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/matheus-silva-souza-devz" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
             </a>
-            <a href="https://github.com/" target="_blank" class="text-muted">
-                <i class="bi bi-github fs-4"></i>
+            <a href="https://github.com/devsoouz" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="bi bi-github"></i>
             </a>
         </div>
     </div>
 </footer>
+
+<script>
+    // Sombra na navbar quando rolar a página
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 
 </body>
 </html>
