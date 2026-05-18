@@ -12,7 +12,7 @@
 
 ![Preview do portfólio](./assets/images/projeto-pessoal.png)
 
-> 💡 **Dica:** tire um print do seu site final e salve como `preview.png` em `assets/images/` para aparecer aqui.
+> 
 
 ---
 
